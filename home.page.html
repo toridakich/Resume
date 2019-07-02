@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      This is me
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="ion-padding">
+    
+      <ion-button (click)="presentAlert()">Basic Alert</ion-button>
+
+    
+  </div>
+  <ion-avatar>
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-item>
+        <ion-label>Date</ion-label>
+        <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+      </ion-item>
+  <main>
+      <article>
+        <figure class = "pic">
+          <img src = IMG_6598.JPG alt= "This is me!">
+        
+        </figure>
+        <hr>
+        <h1> Education </h1>
+        <hr>
+        <p class = "bio">
+            Washington University in St. Louis <br>
+            Major: Computer Science and Applied Mathematics <br>
+            GPA: 3.75 <br>
+            <br>
+            Park Tudor School <br>
+            GPA: 3.93 Unweighted/ 4.17 Weighted <br>
+            Honors: Cum Laude Inductee, Global Scholar <br>
+        </p>
+        
+        <hr>
+        <h1> Professional Experience </h1>
+        <hr>
+        <p class = "bio">
+                Claire McCaskill Campaign <br>
+                Campaign Intern <br>
+                    • Canvassed for Claire McCaskill and other democratic congressional candidates in the relevant district in over 20 neighborhoods<br>
+                    • Recruited volunteers through phone calls to local registered democrats<br>
+                    • Collected 45 signed CVTs in promise to vote in the upcoming November election.<br>
+                <br>
+                GEMCO Construction <br>
+                Summer Electrical Engineering Intern <br>
+                    • Served as paid intern in the electrical engineering department for a prominent local engineering firm <br>
+                    • Worked with blueprints, designed spreadsheets, and constructing plans to fit an independent budget for eight clients.<br>
+        </p>
+        <hr>
+        <h1> Leadership Experience </h1>
+        <hr>
+        <p class = "bio">
+                WashU Israel Public Affairs Committee – Vice President Politics <br>
+                • Schedule and plan lobbying appointments with Missouri politicians and act as primary contact for such appointments <br>
+                • Organize communications with Members of Congress, including arranging speakers for general body meetings and leadership dinners.<br>
+                <br>
+                Contemporary Legal Issues in Politics - President <br>
+                • Prepared fifteen weekly discussion questions regarding current events to lead a group of twenty-five students in a political discussion<br>
+                • Organized numerous team outings such as debate watch parties, documentary nights, and political field trips<br>
+                • Arranged for five local political leaders, ranging from state senators to United States House of Representative members, to speak to the
+                organization.<br>
+        </p>
+    </article>
+    <h2> Here is a link to my GitHub: <a href=https://github.com/toridakich> here</h2>
+    <hr>
+    <h1> Skills and Interests </h1>
+    <hr>
+    <p class = "bio">
+            Language: Spanish (Intermediate)<br>
+            Skills: Java, Python, Microsoft Excel<br>
+            Interests: Middle Eastern politics, dance, running, yoga, travel, food<br>
+    <form class = "bio">
+        <h2> What are your summer plans??</h2>
+        <input type="checkbox" name ="work" value="work"> Working <br>
+        <input type="checkbox" name="study" value="study"> Studying <br>
+        <input type="checkbox" name="travel" value="travel"> Traveling <br>
+        <input type="checkbox" name="other" value="other"> Other <br>
+        <textarea name= "Other" placeholder="If other, explain:"></textarea><br>
+        Are you a college student?<br>
+        <input type="radio" name= "Yes" value= "Yes"> <b>Yes.</b><br>
+        <input type ="radio" name= "No" value = "No"><b>No.</b><br>
+        
+    </form>
+</main>
+  
+</ion-content>
